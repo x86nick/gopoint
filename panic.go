@@ -1,3 +1,9 @@
+/*Triggers Panic manually. Program will Halt!!
+Runtime errors will also trigger a panic ie. array out of bound.
+All functions in the stack will be unwound when panic occurs, thus defer functions will be called!!
+Avoid panic unless in main! Handle your errors!
+*/
+
 package main
 
 import (
