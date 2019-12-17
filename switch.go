@@ -41,10 +41,9 @@ Fini:
 
 	// Or... merge cases
 	switch i {
-	case 10, 20:
+	case 10, 20: // this is better than fallthrough
 		fmt.Println("All good")
 	default:
 		fmt.Println("Not good")
 	}
 }
-
