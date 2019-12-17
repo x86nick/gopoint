@@ -1,3 +1,8 @@
+/*
+A function can have multiple parameter as well as multiple return values
+Variadic parameters allow passing an arbitrary number of parameters of same type
+Returns values can have a name
+*/
 package main
 
 import "fmt"
