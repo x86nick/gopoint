@@ -8,7 +8,7 @@ func main() {
   // Main use case
   defer fmt.Println("Yo Mama!")  // defer is a function, will be call when it will hit the bracket then it hit line 20 '}'
   // Function call  // use case, trying to open, you will always close the file, rather than closing at ever exit point, you just defer
-  defer done()
+  defer done() // defer must be a callable function
 
   // LIFO
   for i := 0; i < 5; i++ {
