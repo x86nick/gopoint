@@ -22,7 +22,7 @@ func isRetryable(e error) (b bool) {
 }
 
 func main() {
-	for i, j := 1, 0; isRetryable(fred(i)); j++ {
+	for i, j := 1, 0; isRetryable(Bee(i)); j++ {
 		if j == 5 {
 			fmt.Println("Giving up! Done retrying...")
 			break
