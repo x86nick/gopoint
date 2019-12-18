@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var c = make(chan struct{}) // empty struct, holds no memory, 
-	go func(c chan<- struct{}) { // producer, it will take empty stuct channle and do sometning
+	go func(c chan<- struct{}) { // producer, it will take empty stuct channel and do sometning
 		defer func() {
 			fmt.Println("Backup successful! (Bucket=BumblebeeTuna)")
 		}()
@@ -18,6 +18,6 @@ func main() {
 		close(c) // close channel, it has anythign to do the resourcs
 	}(c)
 
-	_ = <-c // block here for backup to finish
+	_ = <-c //holding/blocking main() here for backup to finish // <-c will also work, 
 	fmt.Println("\nWe're done!")
 }
